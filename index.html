@@ -1,52 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Anupom Das</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anupom Das | Home</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Font (optional clean look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="navbar">
-  <h3>Anupom Das</h3>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="research.html">Research</a>
-    <a href="work.html">Work</a>
-    <a href="services.html">Services</a>
-    <a href="blogs.html">Blogs</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">Anupom Das</div>
 
-<div class="hero">
-  <div class="hero-text">
-    <h1>Physician | Health Informatics Researcher</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="services.html">Services</a>
+      <a href="notes.html">Notes</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Language Toggle -->
+    <button onclick="toggleLanguage()" class="lang-btn">বাংলা / EN</button>
+  </header>
+
+
+  <!-- HERO / HOME -->
+  <section id="home" class="home-section">
+
+    <div class="home-content">
+      <h1>
+        <span class="en">Welcome</span>
+        <span class="bn">স্বাগতম</span>
+      </h1>
+
+      <p>
+        <span class="en">
+          I am a medical doctor and health informatics student passionate about public health, research, and data science.
+        </span>
+        <span class="bn">
+          আমি একজন চিকিৎসক এবং হেলথ ইনফরমেটিক্স শিক্ষার্থী, জনস্বাস্থ্য, গবেষণা এবং ডেটা সায়েন্সে আগ্রহী।
+        </span>
+      </p>
+
+      <a href="cv.pdf" class="btn" target="_blank">
+        <span class="en">Download CV</span>
+        <span class="bn">সিভি ডাউনলোড</span>
+      </a>
+    </div>
+
+    <div class="home-image">
+      <img src="profile.jpg" alt="Profile Photo">
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+
+    <h2>
+      <span class="en">About Me</span>
+      <span class="bn">আমার সম্পর্কে</span>
+    </h2>
+
     <p>
-      Building data-driven health systems connecting clinical care,
-      epidemiology, and digital infrastructure.
+      <span class="en">
+        I have experience in clinical medicine, epidemiology, and health systems. Currently, I am pursuing a Master's in Health Informatics at Karolinska Institutet.
+      </span>
+      <span class="bn">
+        আমার ক্লিনিক্যাল মেডিসিন, এপিডেমিওলজি এবং স্বাস্থ্য ব্যবস্থাপনায় অভিজ্ঞতা রয়েছে। বর্তমানে আমি কারোলিন্সকা ইনস্টিটিউটে হেলথ ইনফরমেটিক্সে মাস্টার্স করছি।
+      </span>
     </p>
-  </div>
-</div>
 
-<div class="section">
-  <h2>Profile</h2>
-  <p>
-    Medical Doctor with 8+ years experience in clinical medicine,
-    epidemiology, and digital health systems. MSc Health Informatics (Karolinska Institutet).
-  </p>
-</div>
+  </section>
 
-<div class="section card-grid">
-  <div class="card"><h3>Experience</h3><p>8+ years</p></div>
-  <div class="card"><h3>Research</h3><p>Clinical trials & epidemiology</p></div>
-  <div class="card"><h3>Digital Health</h3><p>DHIS2, Python</p></div>
-</div>
 
-<div class="footer">
-  © 2026 Anupom Das
-</div>
+  <!-- QUICK LINKS -->
+  <section class="quick-links">
+
+    <h2>
+      <span class="en">Explore</span>
+      <span class="bn">অন্বেষণ করুন</span>
+    </h2>
+
+    <div class="cards">
+
+      <a href="profile.html" class="card">
+        <h3>Profile</h3>
+      </a>
+
+      <a href="services.html" class="card">
+        <h3>Services</h3>
+      </a>
+
+      <a href="notes.html" class="card">
+        <h3>Notes</h3>
+      </a>
+
+      <a href="contact.html" class="card">
+        <h3>Contact</h3>
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Anupom Das</p>
+  </footer>
+
+
+  <!-- JS -->
+  <script src="script.js"></script>
 
 </body>
 </html>
