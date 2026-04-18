@@ -199,3 +199,14 @@ section h2 {
   }
 
 }
+
+
+.clickable .details {
+  display: none;
+  margin-top: 10px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
