@@ -1,27 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile | Anupom Das</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="section">
-  <h1>Research Statement</h1>
+<header class="header">
+  <div class="logo">Anupom Das</div>
 
-  <p>
-    My research focuses on integrating clinical workflows with digital systems
-    to improve population health outcomes.
-  </p>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="services.html">Services</a>
+    <a href="notes.html">Notes</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <h2>Interests</h2>
-  <ul>
-    <li>Health Informatics</li>
-    <li>Epidemiology</li>
-    <li>AI in healthcare</li>
-  </ul>
+  <button onclick="toggleLanguage()" class="lang-btn">বাংলা / EN</button>
+</header>
+
+<!-- SUMMARY -->
+<section class="home-section">
+
+  <div class="home-image">
+    <img src="profile.jpg">
+  </div>
+
+  <div class="home-content">
+
+    <h1>
+      <span class="en">Career Summary</span>
+      <span class="bn">ক্যারিয়ার সারাংশ</span>
+    </h1>
+
+    <p class="en">
+      Medical doctor with 8+ years of experience in clinical medicine, epidemiology, disease surveillance, and health systems strengthening. Currently pursuing MSc in Health Informatics at Karolinska Institutet. Passionate about integrating data science into healthcare systems.
+    </p>
+
+    <p class="bn">
+      আমি একজন চিকিৎসক, যার ক্লিনিক্যাল মেডিসিন, এপিডেমিওলজি এবং স্বাস্থ্য ব্যবস্থাপনায় ৮+ বছরের অভিজ্ঞতা রয়েছে।
+    </p>
+
+    <div style="margin-top:20px;">
+      <a href="cv.pdf" class="btn">Download CV</a>
+      <a href="services.html" class="btn">Services</a>
+      <a href="contact.html" class="btn">Contact</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section>
+<h2>Experience / অভিজ্ঞতা</h2>
+
+<div class="timeline">
+
+<!-- CARD TEMPLATE -->
+<div class="timeline-item left">
+  <div class="section-block clickable">
+    <h3>Medical Officer (Clinical Care & Epidemiology)</h3>
+    <p>2024–2025</p>
+
+    <div class="details">
+      <p><b>Institute:</b> Ministry of Health, Bangladesh</p>
+      <p><b>Role:</b> Clinical + Epidemiology</p>
+      <p><b>Work:</b> Disease surveillance, clinical management</p>
+      <p><b>Alignment:</b> Strengthening digital health systems</p>
+    </div>
+  </div>
+</div>
+
+<div class="timeline-item right">
+  <div class="section-block clickable">
+    <h3>District Health Data Surveillance</h3>
+    <p>2022–2024</p>
+
+    <div class="details">
+      <p>Supervised district database, surveillance system</p>
+    </div>
+  </div>
+</div>
+
+<div class="timeline-item left">
+  <div class="section-block clickable">
+    <h3>Medical Officer (MIS)</h3>
+    <p>2021–2022</p>
+
+    <div class="details">
+      <p>DHIS2 data systems</p>
+    </div>
+  </div>
+</div>
+
+<div class="timeline-item right">
+  <div class="section-block clickable">
+    <h3>COVID-19 Medical Officer</h3>
+    <p>2020–2021</p>
+
+    <div class="details">
+      <p>COVID critical care + lab data</p>
+    </div>
+  </div>
+</div>
+
+<div class="timeline-item left">
+  <div class="section-block clickable">
+    <h3>Research Medical Officer</h3>
+    <p>2019–2020</p>
+
+    <div class="details">
+      <p>BRAC & James P Grant School</p>
+    </div>
+  </div>
+</div>
+
+<div class="timeline-item right">
+  <div class="section-block clickable">
+    <h3>Research Physician (JiVitA)</h3>
+    <p>2017–2018</p>
+
+    <div class="details">
+      <p>Johns Hopkins Project</p>
+    </div>
+  </div>
+</div>
+
+<div class="timeline-item left">
+  <div class="section-block clickable">
+    <h3>Intern Doctor</h3>
+    <p>2015–2016</p>
+
+    <div class="details">
+      <p>Rangpur Medical College Hospital</p>
+    </div>
+  </div>
+</div>
 
 </div>
+</section>
+
+
+<!-- SKILLS -->
+<section>
+<h2>Skills</h2>
+<div class="section-block">
+Python, SPSS, DHIS2, Epidemiology, Data Analysis
+</div>
+</section>
+
+
+<!-- PUBLICATIONS -->
+<section>
+<h2>Publications</h2>
+
+<div id="publications"></div>
+
+</section>
+
+
+<footer class="footer">
+<p>© 2026 Anupom Das</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
